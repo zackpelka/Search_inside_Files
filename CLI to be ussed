@@ -1,0 +1,11 @@
+Use either of these two commands, GREP is easier to look inside of a file for a string you provide.
+
+grep -rnw '/PATH' -e "STRING"
+
+Example:
+grep -rnw '/etc/httpd/' -e "digitas.com"
+grep -rnw '/etc/httpd/' -e "monitorix"
+grep -rnw '/etc/httpd/' -e "evolvragency"
+
+Search using "find"
+find ./ -type f -exec grep search_term -il {} \;
